@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
+<meta charset="unicode" />
 <title>pddform.js demo</title>
 <link rel="stylesheet" href="demo.css" />
 </head>
@@ -10,14 +10,14 @@
 <form class="url_form">
 <div>Upload a PDF form file: <label><input type="file" name="file" /></label></div>
 
-<label>or download one: <input type="text" size="40" value="Spielberichtsbogen_2BL.pdf" name="url" /><button role="submit">Download</button></label>
+
 </form>
 
 <form class="cur_file"></form>
 
 <form class="lib_form">
 PDF library:
-<label><input type="radio" name="pdflib" value="minipdf" checked="checked" />minipdf</label>
+
 <label><input type="radio" name="pdflib" value="pdf.js" />PDF.js</label>
 </form>
 
@@ -28,12 +28,9 @@ PDF library:
 
 <div class="loading">Loading (this may take a while since PDF.js is gigantic)</div>
 
-<!-- In a real-life scenario, you want to chose EITHER minipdf (smaller) -->
-<script src="../minipdf.js"></script>
-
 <!-- .. OR pdf.js (huge, but better compatibility).
 pdf.worker.js is slightly modified to export the actual classes we care about -->
-<script src="../customlibs/pdf.worker.js"></script>
+<script src="pdf.worker.js"></script>
 <script src="../minipdf_js.js"></script>
 
 
