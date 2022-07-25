@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="demo.css" />
 </head>
 <body>
+    <center>
 <div class="error"></div>
 <form class="url_form">
 <div>Upload a PDF form file: <label><input type="file" name="file" /></label></div>
@@ -18,7 +19,7 @@
 <form class="lib_form">
 PDF library:
 
-<label><input type="radio" name="pdflib" value="pdf.js" checked="checked"   />PDF.js</label>
+<label><input type="radio" name="pdflib" value="minipdf" checked="checked"   />PDF.js</label>
 </form>
 
 <form class="fill_form"><button class="fill" disabled="disabled">Fill and download PDF</button></form>
@@ -31,7 +32,7 @@ PDF library:
 <!-- .. OR pdf.js (huge, but better compatibility).
 pdf.worker.js is slightly modified to export the actual classes we care about -->
 <script src="pdf.worker.js"></script>
-<script src="../minipdf_js.js"></script>
+<script src="../minipdf.js"></script>
 
 
 <!-- pako and pdfform.js are required either way -->
@@ -43,5 +44,11 @@ pdf.worker.js is slightly modified to export the actual classes we care about --
 
 <script src="demo.js"></script>
 
+
+
+
+
+
+</center>
 </body>
 </html>

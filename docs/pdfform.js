@@ -14,7 +14,7 @@ if (typeof window == 'undefined') {
 function pdfform(minipdf_lib) {
 
 if (minipdf_lib === 'pdf.js') {
-	minipdf_lib = require('./minipdf_js.js');
+	minipdf_lib = require('../minipdf_js.js');
 }
 
 if (! minipdf_lib) {
